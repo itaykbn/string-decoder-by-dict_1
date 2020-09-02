@@ -1,7 +1,7 @@
 # String decoder by dict_1
-this is the first  of this year
-class - web's 
-teacher - zvi shiran
-team: Itay Kabanovsky , Bar Levovsky (no git user yet) 
+This is the first task of this year
+Class - webs 
+Teacher - Zvi Shiran
+Team: Itay Kabanovsky , Bar Levovsky (no git user yet) 
 
 
