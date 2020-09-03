@@ -1,0 +1,105 @@
+------------------------------------------------------------------------------------------------------------------------
+8) # Errors should never pass silently. Unless explicitly silenced.
+try:
+    import this
+except ImportError:
+    print('This is not available')
+------------------------------------------------------------------------------------------------------------------------
+9) # In the face of ambiguity, refuse the temptation to guess.
+# -ambiguity
+a = True
+b = True
+if not a and b:
+    print('Hello World')
+else:
+    print('Bye World')
+------------------------------------------------------------------------------------------------------------------------
+10) # There should be one-- and preferably only one --obvious way to do it.
+  ##operation do 1 + 1
+good idea:
+   >> print(1 + 1)
+
+bad idea:
+    class GoogleApi:
+        def async send_message(self,mime_message,gmail_address, sender_address):
+            #code that uses the api
+            throw_callback(await async wait_for_reply() => (x) return x.value )
+        def create_mime_message(self,header,body):
+            #code that creates mime message
+        #more functions that are required to make it work(obviously i won't write it)
+        ded async wait_for_reply():
+            #wait for_message_from issac newton
+
+   import asyncio
+   def main():
+        google = GoogleApi()
+        message = google.create_mime_message(self,"hello issac newton","please can you solve the following problem : 1+1; reply as soon as possible")
+        callback = google.send_message()
+        while callback is not None:
+            #play luni tunes full volume
+
+# *disclaimer the syntax is not fully correct it's just for exaggeration
+------------------------------------------------------------------------------------------------------------------------
+11) # Although that way may not be obvious at first unless you’re Dutch.
+
+a = expression1 if condition else expression2
+------------------------------------------------------------------------------------------------------------------------
+12) #Now is better than never. Although never is often better than *right* now.
+
+class A():
+    def really_heavy_function():
+        pass
+
+def main():
+    #no use for the function and that's why never is better than *right* now
+    instance = A()
+    print('hello')
+------------------------------------------------------------------------------------------------------------------------
+13) #If the implementation is hard to explain, it's a bad idea.
+    #If the implementation is easy to explain, it may be a good idea.
+operation count how many   spaces are in a sentece
+good:
+#the implementation is easy to explain that is why it's a good idea
+    def main():
+        sentence = input("enter sentence")
+        print(check_spaces(sentence))
+
+    def check_spaces(string):
+        space_count = 0
+        for char in string:
+            if(char == " "):
+                space_count += 1
+
+        return space_spaces
+
+bad:
+#the implementation is hard to understand and thos is not a good idea even tho it is shorter than the previous one
+    def main():
+        s = input("")
+        t = s.replace(" ","")
+        l1 = len(s)
+        l2 = len(t)
+        print(l1-l2)
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+14) #Namespaces are one honking great idea -- let's do more of those!
+a = 2
+print('id(a) =', id(a))
+
+a = a+1
+print('id(a) =', id(a))
+
+print('id(3) =', id(3))
+
+Output:
+id(a) = 9302208
+id(a) = 9302240
+id(3) = 9302240
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

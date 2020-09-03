@@ -1,3 +1,8 @@
+import logging
+
+logging.basicConfig(filename='logs.log', level=logging.DEBUG)
+
+
 class HelpTools:
     @staticmethod
     def reverse(string):
@@ -8,8 +13,15 @@ class HelpTools:
 
     @staticmethod
     def represents_int(string):
+
         try:
             int(string)
             return True
-        except ValueError:
+        except ValueError:  # Errors should never pass silently. Unless explicitly silenced.
+            logging.info('value not int')
             return False
+
+    @staticmethod
+    def clear_log(name):
+        with open(name, 'w'):
+            pass
