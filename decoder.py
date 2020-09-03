@@ -8,11 +8,11 @@ class Decoder:
     def decode(self, string):
         final_string = ""
         word = ""
-        counter = 0
+        char_counter = 0
         for char in string:
             result = self.decode_char(char)
             if result is not None:
-                if char == string[-1] and counter == len(string) - 1:
+                if char_counter == len(string) - 1:
                     word += result
                     result = "flip"
 
@@ -21,11 +21,11 @@ class Decoder:
                 else:
                     final_string += HelpTools.reverse(word) + " "
                     word = ""
-            counter += 1
+            char_counter += 1
         return final_string
 
     def decode_char(self, search_value):
-        for key, value in self.words_dict.items():  # for name, age in dictionary.iteritems():  (for Python 2.x)
+        for key, value in self.words_dict.items():
             if value == search_value:
                 result = key
                 return result

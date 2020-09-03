@@ -22,7 +22,8 @@ encoded_string = "YXu0hYq1xQ4,hQXUCw8Cs7nIu8BAxIUADYf\n\nLRYUYw5LI0RYUUYs6hDXU3U
 
 def main():
     decoder = Decoder(words_dict)
-    print(decoder.decode(encoded_string))
+    decoded_message = decoder.decode(encoded_string)
+    print(decoded_message)
 
 
 if __name__ == '__main__':

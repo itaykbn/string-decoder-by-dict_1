@@ -1,10 +1,10 @@
 class HelpTools:
     @staticmethod
     def reverse(string):
-        new_str = ""
+        new_string = ""
         for i in string:
-            new_str = i + new_str
-        return new_str
+            new_string = i + new_string
+        return new_string
 
     @staticmethod
     def represents_int(string):
