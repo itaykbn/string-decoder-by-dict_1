@@ -1,3 +1,43 @@
+1)#Beautiful is better than ugly
+def collatz(num):
+    if num%2 == 0:
+        return num//2
+    else:
+        return 3 * num + 1
+
+number = input("Enter a number: ")
+while number != 1:
+    number = collatz(int(number))
+    print(number)
+
+--vs--
+
+def collatz(num):
+    if num%2 == 0:
+        return num//2
+    
+    return 3 * num + 1
+------------------------------------------------------------------------------------------------------------------------
+2)# Simple is better than complex
+def recursion_reverse(s):
+    if(len(s)==1):
+        return s
+    else:
+        return recursion_reverse(s[1:]) + s[0]
+
+original_string = "ABC"
+print("Reversed String : ", recursion_reverse(original_string))
+
+--vs--
+
+my_string = “ABCD”
+reversed_string = my_string[::-1]
+------------------------------------------------------------------------------------------------------------------------
+3)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 ------------------------------------------------------------------------------------------------------------------------
 8) # Errors should never pass silently. Unless explicitly silenced.
 try:
