@@ -9,7 +9,7 @@ Team: Itay Kabanovsky , Bar Lvovsky (no git user yet)
 
 exercise 1- decode.py
 
-exercise 2 - decode.py comments
+exercise 2 - the_zen_of_python_code_examples.txt
 
 
 
