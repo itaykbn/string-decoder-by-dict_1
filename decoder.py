@@ -5,7 +5,7 @@ class Decoder:
     def __init__(self, words_dict):
         self.words_dict = words_dict
 
-    def decode(self, string):
+    def decode(self, string): 
         final_string = ""
         word = ""
         char_counter = 0
