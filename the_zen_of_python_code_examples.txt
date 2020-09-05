@@ -1,4 +1,4 @@
-﻿1)#Beautiful is better than ugly
+1)#Beautiful is better than ugly
 def collatz(num):
     if num%2 == 0:
         return num//2
@@ -60,13 +60,34 @@ b = 82
 c = 90
 print(a/3 + b/3 + c/3)
 ------------------------------------------------------------------------------------------------------------------------
-6)#
+6)#Special cases aren't special enough to break the rules.
 
+#mystrהוספת ספרה כדי שהמילה האחרונה תתווסף ל
+    encoded_string += "0"
 
 ------------------------------------------------------------------------------------------------------------------------
+7)#Although practicality beats purity.
 
-7)#
 
+def most(str):
+    max = 0
+    maxch = ""
+    for ch in str:
+        
+        num = str.count(ch)
+      
+        if num > max:
+            max = num
+            maxch=ch
+
+    print (maxch)
+
+most("aaabbbabccghfgdhhdg")
+
+לכאורה זה טיפה בזבזני כי ייתכן אם תו כשלשהו מופיע יותר מפעם אחת , יהיו הפעלות מיותרות של הפונקציה
+היה אפשר לשמור מערך של כל התוים שכבר הופעלה עליהם הפונקציה
+אך במקרה הזה זה מיותר
+עדיף להיות פרקטי
 
 ------------------------------------------------------------------------------------------------------------------------
 8) # Errors should never pass silently. Unless explicitly silenced.
