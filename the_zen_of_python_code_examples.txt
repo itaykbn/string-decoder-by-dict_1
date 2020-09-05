@@ -1,4 +1,4 @@
-1)#Beautiful is better than ugly
+﻿1)#Beautiful is better than ugly
 def collatz(num):
     if num%2 == 0:
         return num//2
@@ -42,13 +42,32 @@ from spam.foo.baz import eggs
 print('\n'.join("%i bytes = %i bits which has %i possible values." % (j, j * 8, 256 ** j - 1) for j in
                 (1 << i for i in range(8))))
 ------------------------------------------------------------------------------------------------------------------------
-5)#
+5)#Readability counts.
+good:
 
+history = 98
+
+math = 82
+
+physics = 90
+
+print((history + math + physics)/3)
+
+bad:
+
+a = 98
+b = 82
+c = 90
+print(a/3 + b/3 + c/3)
 ------------------------------------------------------------------------------------------------------------------------
 6)#
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 7)#
+
+
 ------------------------------------------------------------------------------------------------------------------------
 8) # Errors should never pass silently. Unless explicitly silenced.
 try:
@@ -71,25 +90,15 @@ good idea:
    >> print(1 + 1)
 
 bad idea:
-    class GoogleApi:
-        def async send_message(self,mime_message,gmail_address, sender_address):
-            #code that uses the api
-            throw_callback(await async wait_for_reply() => (x) return x.value )
-        def create_mime_message(self,header,body):
-            #code that creates mime message
-        #more functions that are required to make it work(obviously i won't write it)
-        ded async wait_for_reply():
-            #wait for_message_from issac newton
-
-   import asyncio
-   def main():
-        google = GoogleApi()
-        message = google.create_mime_message(self,"hello issac newton","please can you solve the following problem : 1+1; reply as soon as possible")
-        callback = google.send_message()
-        while callback is not None:
-            #play luni tunes full volume
-
-# *disclaimer the syntax is not fully correct it's just for exaggeration
+def calculate(x,y)
+	if x == y:
+		print(2*x)
+	elif x > y:
+		diff = x-y
+		print(2*x-diff)
+	else:
+		diff = x-y
+		print(2*x+diff)
 ------------------------------------------------------------------------------------------------------------------------
 11) # Although that way may not be obvious at first unless you’re Dutch.
 
