@@ -1,7 +1,6 @@
 from decoder import Decoder
 from help_tools import HelpTools
 
-
 words_dict = {
     's': 'L', 'b': 's', 'w': 'O', 'z': 'G', 'c': 'o', 'J': 'y', 'V': 't', 'P': 'w', 'B': 'f', 'Z': 'q', 'F': 'k',
     'O': 'N', 'u': 'A', 'W': 'r', 'K': 'K', 'a': 'D', 'v': 'l', 'g': 'S', 'f': 'x', 'x': 'c', 'N': 'e', 'p': 'b',
@@ -24,21 +23,9 @@ encoded_string = "YXu0hYq1xQ4,hQXUCw8Cs7nIu8BAxIUADYf\n\nLRYUYw5LI0RYUUYs6hDXU3U
 
 def main():
     decoder = Decoder(words_dict)
+    HelpTools.delete_log_dialog()
     decoded_message = decoder.decode(encoded_string)
-    if delete_log_dialog():
-        HelpTools.clear_log('logs.log')
     print(decoded_message)
-
-
-def delete_log_dialog():
-    while True:
-        delete_log = input("do you want to delete previous log? enter y/n")
-        if delete_log == 'y':
-            return True
-        elif delete_log == 'n':
-            return False
-        else:
-            print("invalid input")
 
 
 if __name__ == '__main__':
